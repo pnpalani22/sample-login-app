@@ -29,4 +29,9 @@ private DepartmentRepository departmentRepository;
 		return departmentRepository.save(departmentName);
 	}
 
+	public List<Department> getAllDepartment() {
+		// TODO Auto-generated method stub
+		return departmentRepository.findAll();
+	}
+
 }

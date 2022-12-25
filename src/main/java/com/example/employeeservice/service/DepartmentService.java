@@ -7,4 +7,5 @@ import com.example.employeeservice.model.Department;
 public interface DepartmentService {
 	Department getDepartment(String name);
 	Department save(String departmentName);
+	List<Department> getAllDepartment();
 }
