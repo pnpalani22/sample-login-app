@@ -26,6 +26,8 @@ public class Employee {
  private long id;
 @Column(name="employee_name")
  private String empName;
+@Column(name="username")
+private String username;
 @Column(name="address")
  private String address;
 @Column(name="active")
