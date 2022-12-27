@@ -20,7 +20,7 @@ public class DepartmentController {
 	private DepartmentService departmentService;
 	
 	@GetMapping
-	public ResponseEntity<List<Department>> getAllEmployee(){
-		return new ResponseEntity<List<Department>>(departmentService.getAllDepartment(),HttpStatus.CREATED);
+	public ResponseEntity<List<Department>> getAllDepartment(){
+		return new ResponseEntity<List<Department>>(departmentService.getAllDepartment(),HttpStatus.OK);
 	}
 }

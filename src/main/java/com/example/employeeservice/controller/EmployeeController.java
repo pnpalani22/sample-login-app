@@ -30,6 +30,6 @@ public ResponseEntity<Employee> saveEmployee(@RequestBody Employee employee){
 
 @GetMapping
 public ResponseEntity<List<Employee>> getAllEmployee(){
-	return new ResponseEntity<List<Employee>>(EmployeeService.getAllEmployee(),HttpStatus.CREATED);
+	return new ResponseEntity<List<Employee>>(EmployeeService.getAllEmployee(),HttpStatus.OK);
 }
 }

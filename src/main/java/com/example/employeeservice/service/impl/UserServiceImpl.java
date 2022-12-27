@@ -27,4 +27,10 @@ private UserRepository userRepository;
 		return userRepository.findByUsername(username);
 	}
 
+	@Override
+	public User saveUser(User user) {
+		// TODO Auto-generated method stub
+		return userRepository.save(user);
+	}
+
 }
